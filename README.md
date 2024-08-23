@@ -1,0 +1,1 @@
+Um simples script para clicks automaticos feito em java
