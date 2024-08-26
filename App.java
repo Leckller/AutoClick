@@ -24,7 +24,7 @@ public class App {
           if(rests >= 5) {
             rests = 0;
             toBase(robot);
-            Thread.sleep(25000);
+            steps = 11;
           }
         }
       } else {
