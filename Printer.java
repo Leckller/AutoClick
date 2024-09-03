@@ -2,11 +2,20 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 public class Printer {
+    private static void starter (int ms) throws Exception{
+        int count = 11;
+        while (count > 1) {
+            count --;
+            System.out.println(String.format("Iniciando em %s", count));
+            Thread.sleep(2000/10);
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         Robot robot = new Robot();
-        Thread.sleep(2000);
+        starter(2000);
         long count = 0;
-        
+
         while (true) { 
             count++;
             printerLn(robot, String.format("fototeta?"));
